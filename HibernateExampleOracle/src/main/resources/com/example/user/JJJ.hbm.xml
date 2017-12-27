@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.example.user.JJJ" table="JJJ">
+        <id name="companyId" type="int">
+            <column name="COMPANY_ID" />            
+        </id>
+        <property name="code" type="string">
+            <column name="CODE" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="active" type="int">
+            <column name="ACTIVE" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="createdDate" type="date">
+            <column name="CREATED_DATE" />
+        </property>
+        <property name="lastModifiedBy" type="string">
+            <column name="LAST_MODIFIED_BY" />
+        </property>
+        <property name="lastModifiedDate" type="date">
+            <column name="LAST_MODIFIED_DATE" />
+        </property>
+    </class>
+</hibernate-mapping>
